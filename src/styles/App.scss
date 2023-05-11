@@ -1,0 +1,14 @@
+@import './normalize.min.css';
+
+@import './style-services/variables';
+@import './style-services/text-style';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap');
+
+body, a, button {
+    cursor: url(../assets/cursor/Cursor.svg), auto;
+    font-family: $Montserrat;
+    color: $text-dark;
+}
+
+@import '../components/ServiceElements/serviceElem';
+@import '../components/Header/header';

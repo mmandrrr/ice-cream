@@ -1,0 +1,139 @@
+@import url(d:\IT\Portfolio-projects\ice-cream\src\styles\normalize.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap");
+.fz-14_reg {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+
+.fz-16_reg {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75rem;
+  letter-spacing: 0.04em;
+}
+
+.fz-16_med {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+}
+
+.subtitle {
+  font-weight: 800;
+  font-size: 1.875rem;
+  line-height: 2.3125rem;
+  letter-spacing: 0.04em;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.8125rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+body, a, button {
+  cursor: url(../assets/cursor/Cursor.svg), auto;
+  font-family: "Montserrat", sans-serif;
+  color: #131313;
+}
+
+.btn {
+  border-radius: .625rem;
+  background-color: #fff;
+  padding: .75rem 2.125rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn_yellow-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  background-color: #F8D24E;
+  border: none;
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 1.0625rem;
+}
+
+.btn_yellow-bg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn_yellow-bg:hover {
+  background-color: #0A8817;
+}
+
+.btn_yellow-bg:active {
+  background-color: #0A8817;
+  color: #FCFCFC;
+}
+
+.btn_yellow-bg:active path {
+  stroke: #FCFCFC;
+}
+
+.header {
+  background-color: #84A178;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.125rem;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6875rem;
+}
+
+.header__menu-item {
+  list-style: none;
+}
+
+.header__menu-link {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #FCFCFC;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header__menu-link:hover {
+  color: #F8D24E;
+}
+
+.container {
+  max-width: 100vw;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=App.css.map */
