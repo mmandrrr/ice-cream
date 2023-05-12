@@ -10,5 +10,14 @@ body, a, button {
     color: $text-dark;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 @import '../components/ServiceElements/serviceElem';
 @import '../components/Header/header';
+@import '../components/Main/main';

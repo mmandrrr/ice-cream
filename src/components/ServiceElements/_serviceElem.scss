@@ -3,17 +3,17 @@
     background-color: #fff;
     padding: .75rem 2.125rem;
     transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.0625rem;
 
-     &_yellow-bg {
+    &_yellow-bg {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: .5rem;
         background-color: $yellow;
         border: none;
-        font-weight: 600;
-        font-size: .875rem;
-        line-height: 1.0625rem;
 
         path {
             transition: all 0.3s ease;
@@ -30,6 +30,34 @@
             path {
                 stroke: $text-light;
             }
+        }
+    }
+
+    &_yellow-brd {
+        border: 2px solid $yellow;
+        background-color: inherit;
+
+        &:hover {
+            border: 2px solid #0A8817;
+        }
+
+        &:active {
+            color: $text-light;
+            border: 2px solid #0A8817;
+        }
+    }
+
+    &_no-brd {
+        border: none;
+        color: $yellow;
+        background-color: inherit;
+
+        &:hover {
+            color: #0A8817;
+        }
+
+        &:active {
+            color: white;
         }
     }
 }
