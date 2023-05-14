@@ -115,9 +115,10 @@
     }
 
     &__list {
+        padding: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        gap: 2.5rem;
         align-items: center;
         list-style: none;
         height: 80%;
@@ -164,6 +165,12 @@
     .burger {
         display: flex;
     }
+
+    .mobile {
+        .btn {
+            display: none;
+        }
+    }
 }
 
 @media(max-width:426px) {
@@ -182,10 +189,25 @@
     }
 
     .mobile {
+        padding-left: 1.375rem;
+        padding-right: 1.375rem;
+        padding-bottom: 3.9375rem;
+
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
         &__item {
             font-weight: 700;
             font-size: 2rem;
             line-height: 2.4375rem;
+        }
+
+        .btn {
+            display: flex;
         }
     }
 }

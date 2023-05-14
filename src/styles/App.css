@@ -1,3 +1,4 @@
+@import url(d:\IT\Portfolio-projects\ice-cream\src\styles\reset.css);
 @import url(d:\IT\Portfolio-projects\ice-cream\src\styles\normalize.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap");
 .fz-14_reg {
@@ -269,6 +270,7 @@ body {
 }
 
 .mobile__list {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,8 +278,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  gap: 2.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -323,6 +324,9 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .mobile .btn {
+    display: none;
+  }
 }
 
 @media (max-width: 426px) {
@@ -336,10 +340,34 @@ body {
   .burger {
     margin-right: 1.25rem;
   }
+  .mobile {
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    padding-bottom: 3.9375rem;
+  }
+  .mobile__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .mobile__item {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.4375rem;
+  }
+  .mobile .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -383,6 +411,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.heading__gen-info img {
+  width: 14.0625rem;
 }
 
 .heading__text {
@@ -456,5 +488,67 @@ body {
   height: 100%;
   background: url(../assets/main-screen/ice-cream.png) 80% bottom/30% no-repeat;
   z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    padding: 1.75rem 0 .8125rem;
+  }
+  .heading__title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    max-width: 11.4375rem;
+    margin-bottom: 1.25rem;
+  }
+  .heading__title span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: .8125rem;
+  }
+  .heading__buttons {
+    margin-bottom: 1.75rem;
+  }
+  .heading__buttons .btn {
+    padding: .625rem .4375rem;
+    font-weight: 600;
+    font-size: .5rem;
+    line-height: .625rem;
+  }
+  .heading__gen-info img {
+    width: 9.5rem;
+  }
+  .heading__text {
+    max-width: 9.4375rem;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.0625rem;
+  }
+  .heading__text img {
+    width: 2.5rem;
+  }
+  .heading__locations {
+    gap: 1.25rem;
+    margin-right: 2rem;
+  }
+  .heading__cafes-count {
+    font-weight: 400;
+    font-size: .5rem;
+    line-height: .625rem;
+  }
+  .heading__cafes-count span {
+    font-weight: 900;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+  }
+  .heading__ice-cream {
+    background-size: 37%;
+  }
+  .heading__dots {
+    background: url(/src/assets/main-screen/dots-tablet-min.png) center bottom/100% no-repeat;
+  }
 }
 /*# sourceMappingURL=App.css.map */

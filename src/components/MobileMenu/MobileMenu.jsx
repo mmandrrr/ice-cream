@@ -1,4 +1,4 @@
-
+import Button from "../ServiceElements/Button"
 
 const MobileMenu = ({changeClassName}) => {
     return(
@@ -22,6 +22,11 @@ const MobileMenu = ({changeClassName}) => {
                     <li className="mobile__item"><a href="#" className="mobile__link">Our products</a></li>
                     <li className="mobile__item"><a href="#" className="mobile__link">Contact</a></li>
                 </ul>
+                <Button 
+                    text='Buy now'
+                    className='btn_yellow-bg'
+                    img={true}
+                />
             </nav>
         </div>
     )

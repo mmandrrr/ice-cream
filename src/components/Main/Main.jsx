@@ -9,7 +9,7 @@ const Main =( )=> {
             <section className="heading">
                 <div className="container heading__container">
                     <h1 className="heading__title">
-                        ice cream made with passion
+                        ice cream made with <span>passion</span>
                     </h1>
                     <div className="heading__buttons">
                         <Button 

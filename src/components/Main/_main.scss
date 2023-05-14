@@ -31,6 +31,10 @@
             gap: .875rem;
             color: $text-light;
             align-items: center;
+
+            img {
+                  width: 14.0625rem;
+            }
 		}
 
 		&__text {
@@ -90,4 +94,81 @@
             background: url(../assets/main-screen/ice-cream.png) 80% bottom / 30% no-repeat;
             z-index: 0;
 		}
+}
+
+
+@media(max-width:768px) {
+      .heading {
+
+            padding: 1.75rem 0 .8125rem;
+
+            &__title {
+                  font-weight: 400;
+                  font-size: 1.125rem;
+                  line-height: 1.4375rem;
+                  max-width: 11.4375rem;
+                  margin-bottom: 1.25rem;
+
+                  span {
+                        display: block;
+                        width: 100%;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: .8125rem;
+                  }
+            }
+
+            &__buttons {
+                  margin-bottom: 1.75rem;
+
+                  .btn {
+                        padding: .625rem .4375rem;
+                        font-weight: 600;
+                        font-size: .5rem;
+                        line-height: .625rem;
+                  }
+            }
+
+            &__gen-info {
+                  img {
+                        width: 9.5rem;
+                  }
+            }
+
+            &__text {
+                  max-width: 9.4375rem;
+                  gap: 1rem;
+                  font-weight: 400;
+                  font-size: .75rem;
+                  line-height: 1.0625rem;
+
+                  img {
+                        width: 2.5rem;
+                  }
+            }
+
+            &__locations {
+                  gap: 1.25rem;
+                  margin-right: 2rem;
+            }
+
+            &__cafes-count {
+                  font-weight: 400;
+                  font-size: .5rem;
+                  line-height: .625rem;
+                  span {
+                        font-weight: 900;
+                        font-size: 1.75rem;
+                        line-height: 2.125rem;
+                  }
+            }
+
+            &__ice-cream {
+                  background-size: 37%;
+            }
+
+            &__dots {
+                  background: url(/src/assets/main-screen/dots-tablet-min.png) center bottom/100% no-repeat
+            }
+      }
 }
