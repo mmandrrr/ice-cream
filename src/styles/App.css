@@ -26,6 +26,7 @@
   font-size: 1.875rem;
   line-height: 2.3125rem;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .title {
@@ -176,7 +177,7 @@ body {
 }
 
 .container {
-  max-width: 100vw;
+  max-width: 96.875rem;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -338,7 +339,7 @@ body {
     display: none;
   }
   .burger {
-    margin-right: 1.25rem;
+    margin-right: .25rem;
   }
   .mobile {
     padding-left: 1.375rem;
@@ -549,6 +550,41 @@ body {
   }
   .heading__dots {
     background: url(/src/assets/main-screen/dots-tablet-min.png) center bottom/100% no-repeat;
+  }
+}
+
+@media (max-width: 426px) {
+  .heading__title {
+    font-size: 1.625rem;
+    line-height: 2.0625rem;
+    max-width: 15.625rem;
+    margin-bottom: 2rem;
+  }
+  .heading__buttons {
+    margin-bottom: 15rem;
+  }
+  .heading__gen-info {
+    display: none;
+  }
+  .heading__locations {
+    display: none;
+  }
+  .heading__dots {
+    background: url(/src/assets/main-screen/dots-mobile-min.png) center bottom/100% no-repeat;
+  }
+  .heading__ice-cream {
+    background-position: center bottom;
+    background-size: 60%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .heading__dots {
+    background-size: calc(1520px + (1568 - 1520) * ((100vw - 1600px)/(1960-1600)));
+  }
+  .heading__ice-cream {
+    background-size: calc(480px + (588 - 480) * ((100vw - 1600px)/(1960-1600)));
+    background-position-x: 76%;
   }
 }
 /*# sourceMappingURL=App.css.map */

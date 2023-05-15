@@ -1,0 +1,220 @@
+.heading {
+    padding: 2.8125rem 0rem 4.0625rem;
+    background-color: $green;
+    position: relative;
+    
+        &__container {
+            position: relative;
+            z-index: 5;
+        }
+
+		&__title {
+            font-family: $Seymour;
+            font-weight: 400;
+            font-size: 2.375rem;
+            line-height: 3rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            max-width: 22.9375rem;
+            margin-bottom: 1.75rem;
+            color: $text-light;
+		}
+
+		&__buttons {
+            display: flex;
+            gap: .75rem;
+            margin-bottom: 2.625rem;
+		}
+
+		&__gen-info {
+            display: flex;
+            gap: .875rem;
+            color: $text-light;
+            align-items: center;
+
+            img {
+                  width: 14.0625rem;
+            }
+		}
+
+		&__text {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem; 
+            max-width: 12.5rem;
+
+            img {
+                width: 2.5rem;
+            }
+		}
+
+		&__locations {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5625rem;
+		}
+
+		&__cafes-count {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+            text-align: right;
+            color: $text-light;
+
+            span {
+                font-weight: 900;
+                font-size: 2.875rem;
+                line-height: 3.5rem;
+                letter-spacing: 0.04em;
+                color: $text-dark;
+                text-transform: uppercase;
+            }
+		}
+
+		&__dots {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../assets/main-screen/dots-min.png) center bottom / 100% no-repeat;
+            z-index: 0;
+		}
+
+		&__ice-cream {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../assets/main-screen/ice-cream.png) 80% bottom / 30% no-repeat;
+            z-index: 0;
+		}
+}
+
+
+@media(max-width:768px) {
+      .heading {
+
+            padding: 1.75rem 0 .8125rem;
+
+            &__title {
+                  font-weight: 400;
+                  font-size: 1.125rem;
+                  line-height: 1.4375rem;
+                  max-width: 11.4375rem;
+                  margin-bottom: 1.25rem;
+
+                  span {
+                        display: block;
+                        width: 100%;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: .8125rem;
+                  }
+            }
+
+            &__buttons {
+                  margin-bottom: 1.75rem;
+
+                  .btn {
+                        padding: .625rem .4375rem;
+                        font-weight: 600;
+                        font-size: .5rem;
+                        line-height: .625rem;
+                  }
+            }
+
+            &__gen-info {
+                  img {
+                        width: 9.5rem;
+                  }
+            }
+
+            &__text {
+                  max-width: 9.4375rem;
+                  gap: 1rem;
+                  font-weight: 400;
+                  font-size: .75rem;
+                  line-height: 1.0625rem;
+
+                  img {
+                        width: 2.5rem;
+                  }
+            }
+
+            &__locations {
+                  gap: 1.25rem;
+                  margin-right: 2rem;
+            }
+
+            &__cafes-count {
+                  font-weight: 400;
+                  font-size: .5rem;
+                  line-height: .625rem;
+                  span {
+                        font-weight: 900;
+                        font-size: 1.75rem;
+                        line-height: 2.125rem;
+                  }
+            }
+
+            &__ice-cream {
+                  background-size: 37%;
+            }
+
+            &__dots {
+                  background: url(/src/assets/main-screen/dots-tablet-min.png) center bottom/100% no-repeat;
+            }
+      }
+}
+
+@media(max-width:426px) {
+      .heading {
+
+            &__title {
+                  font-size: 1.625rem;
+                  line-height: 2.0625rem;
+                  max-width: 15.625rem;
+                  margin-bottom: 2rem;
+            }
+
+            &__buttons {
+                  margin-bottom: 15rem;
+            }
+
+            &__gen-info {
+                  display: none;
+            }
+
+            &__locations {
+                  display: none;
+            }
+
+            &__dots {
+                  background: url(/src/assets/main-screen/dots-mobile-min.png) center bottom/100% no-repeat;
+            }
+
+            &__ice-cream {
+                  background-position: center bottom;
+                  background-size: 60%;
+            }
+      }
+}
+
+@media(min-width:1600px) {
+      .heading {
+            &__dots {
+                  background-size: calc(1520px + (1568 - 1520) * ((100vw - 1600px)/(1960-1600)));
+            }
+
+            &__ice-cream {
+                  background-size: calc(480px + (588 - 480) * ((100vw - 1600px)/(1960-1600)));
+                  background-position-x: 76%;
+            }
+      }
+}
