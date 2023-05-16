@@ -1,4 +1,4 @@
-import arrow from '../../assets/utility/arrow-no-bar.svg'
+
 
 const Button = ({text,className,img}) => {
     return(

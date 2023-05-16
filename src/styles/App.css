@@ -726,4 +726,126 @@ body {
     bottom: 1.25rem;
   }
 }
+
+.made {
+  padding: 3.75rem 0 11.25rem;
+  background-color: #84A178;
+  color: #FCFCFC;
+}
+
+.made__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.made__subtitle {
+  margin-bottom: .75rem;
+}
+
+.made__title {
+  margin-bottom: 5.125rem;
+}
+
+.made__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.made__image {
+  max-width: 31.25rem;
+}
+
+.made__description {
+  max-width: 28.9375rem;
+}
+
+.made__description article:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.made__description article:not(:first-child) {
+  font-size: .875rem;
+  line-height: 1.6875rem;
+}
+
+.made__description article:last-child {
+  margin-bottom: 3rem;
+}
+
+.made__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  row-gap: 1.75rem;
+}
+
+.made__stats-item {
+  max-width: 23.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.made__stats-item img {
+  max-width: 3.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.made__stats-item h4 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 3.625rem;
+  line-height: 4.4375rem;
+}
+
+.made__stats-item p {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .made__container {
+    padding: 0 2rem;
+  }
+  .made__subtitle {
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+  }
+  .made__title {
+    font-size: 2.125rem;
+    line-height: 2.6875rem;
+  }
+  .made__content {
+    gap: 2rem;
+  }
+  .made__image {
+    max-width: 21.25rem;
+    margin-bottom: 0;
+  }
+  .made__description article {
+    font-size: .75rem;
+    line-height: 1.3125rem;
+  }
+}
 /*# sourceMappingURL=App.css.map */

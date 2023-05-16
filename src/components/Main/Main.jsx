@@ -1,4 +1,5 @@
 import Heading from './Heading/Heading.jsx';
+import HowMade from './HowMade/HowMade.jsx';
 import Products from './Products/Products.jsx';
 
 const Main =( )=> {
@@ -6,6 +7,7 @@ const Main =( )=> {
         <main className="main">
             <Heading />
             <Products />
+            <HowMade />
         </main>
     )
 }
