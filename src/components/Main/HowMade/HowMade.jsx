@@ -1,6 +1,6 @@
 import Button from '../../ServiceElements/Button';
 
-import cow from '../../../assets/how-its-made/cow.png';
+import cow from '../../../assets/how-its-made/cow-min.png';
 import cowIcon from '../../../assets/how-its-made/cow-icon.svg'
 import iceIcon from '../../../assets/how-its-made/ice-cream-icon.svg'
 import weightIcon from '../../../assets/how-its-made/weight-icon.svg'
