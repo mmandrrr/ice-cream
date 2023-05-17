@@ -2,6 +2,8 @@ import Button from '../../ServiceElements/Button';
 
 import cow from '../../../assets/how-its-made/cow.png';
 import cowIcon from '../../../assets/how-its-made/cow-icon.svg'
+import iceIcon from '../../../assets/how-its-made/ice-cream-icon.svg'
+import weightIcon from '../../../assets/how-its-made/weight-icon.svg'
 
 const HowMade = () => {
     return(
@@ -31,13 +33,13 @@ const HowMade = () => {
                         <p className='fz-16_reg'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </div>
                     <div className="made__stats-item">
-                        <img src={cowIcon} alt="stats icon" />
-                        <h4>721</h4>
+                        <img src={weightIcon} alt="stats icon" />
+                        <h4>16kg</h4>
                         <p className='fz-16_reg'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </div>
                     <div className="made__stats-item">
-                        <img src={cowIcon} alt="stats icon" />
-                        <h4>721</h4>
+                        <img src={iceIcon} alt="stats icon" />
+                        <h4>84</h4>
                         <p className='fz-16_reg'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </div>
                 </div>

@@ -79,6 +79,7 @@
 
 @media(max-width:1024px) {
     .made {
+        padding-bottom: 12.75rem;
 
         &__container {
             padding: 0 2rem;
@@ -92,10 +93,13 @@
 		&__title {
             font-size: 2.125rem;
             line-height: 2.6875rem;
+            text-align: center;
 		}
 
 		&__content {
             gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
 		}
 
 		&__image {
@@ -104,6 +108,7 @@
 		}
 
 		&__description {
+            max-width: 20.75rem;
             
             article {
                 font-size: .75rem;
@@ -112,35 +117,73 @@
 		}
 
 		&__stats {
+            gap: 5rem;
+            justify-content: center;
 		}
 
 		&__stats-item {
+            max-width: 9.5rem;
+
+            h4 {
+                font-size: 3rem;
+                line-height: 3.6875rem;
+            }
+
+            p {
+                font-size: .875rem;
+                line-height: 1.5rem;
+            }
 		}
     }
 }
 
-@media(max-width:1024px) {
+@media(max-width:426px) {
     .made {
+        padding-bottom: 3.75rem;
 
 		&__subtitle {
+            font-size: 1.125rem;
+            line-height: 1.375rem;
 		}
 
 		&__title {
+            font-size: 1.875rem;
+            line-height: 2.375rem;
+            margin-bottom: 2rem;
 		}
 
 		&__content {
+            gap: 2.5rem;
+            margin-bottom: 2.625rem;
 		}
 
 		&__image {
+            max-width: 17.5rem;
 		}
 
 		&__description {
+            text-align: center;
+            font-size: .75rem;
+            line-height: 1.3125rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 		}
 
 		&__stats {
+            gap: 1.6875rem;
 		}
 
 		&__stats-item {
+            h4 {
+                font-size: 2.25rem;
+                line-height: 2.625rem;
+            }
+
+            p {
+                font-size: .75rem;
+                line-height: 1.25rem;
+            }
 		}
     }
 }
