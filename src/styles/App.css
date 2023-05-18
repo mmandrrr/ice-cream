@@ -864,6 +864,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .made__stats-item {
     max-width: 9.5rem;
@@ -963,9 +965,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 60.5rem;
   overflow: hidden;
 }
@@ -976,8 +975,10 @@ body {
   display: flex;
   width: 300%;
   gap: .625rem;
-  -webkit-transform: translateX(calc(100%/3));
-          transform: translateX(calc(100%/3));
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .testimonials__item {
@@ -1011,6 +1012,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 1.125rem;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .testimonials__dots span {
@@ -1019,6 +1022,8 @@ body {
   width: .75rem;
   height: .75rem;
   background-color: #D9D9D9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .testimonials__dots span:hover {
@@ -1027,5 +1032,45 @@ body {
 
 .testimonials__dots span.active {
   background-color: #84A178;
+}
+
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 13.625rem 0rem 23.9375rem;
+  }
+  .testimonials__heading {
+    top: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: calc(350px + (704 - 350) * ((100vw - 425px)/(768 - 425)));
+  }
+  .testimonials__slider {
+    max-width: calc(350px + (704 - 350) * ((100vw - 425px)/(768 - 425)));
+  }
+  .testimonials__text {
+    font-size: .875rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .testimonials {
+    padding: 11.25rem 0rem 24.625rem;
+    background-repeat: repeat-y;
+  }
+  .testimonials__heading {
+    top: -1.25rem;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    max-width: 17.5rem;
+  }
+  .testimonials__slider {
+    max-width: 17.5rem;
+  }
+  .testimonials__text {
+    font-size: .875rem;
+    line-height: 1.625rem;
+    padding: 2.125rem 2.4375rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */

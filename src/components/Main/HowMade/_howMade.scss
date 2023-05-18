@@ -119,6 +119,7 @@
 		&__stats {
             gap: 5rem;
             justify-content: center;
+            flex-wrap: wrap;
 		}
 
 		&__stats-item {

@@ -21,7 +21,6 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        align-items: center;
         max-width: 60.5rem;
         overflow: hidden;
     }
@@ -30,7 +29,7 @@
         display: flex;
         width: 300%;
         gap: .625rem;
-        transform: translateX(calc(100%/3));
+        transition: transform 0.5s ease;
     }
 
     &__item {
@@ -55,6 +54,8 @@
     &__dots {
         display: flex;
         gap: 1.125rem;
+        align-self: center;
+        
 
         span {
             display: block;
@@ -62,6 +63,7 @@
             width: .75rem;
             height: .75rem;
             background-color: #D9D9D9;
+            transition: all 0.3s ease;
 
             &:hover {
                 background-color: $green;
@@ -74,3 +76,46 @@
     }
 }
 
+@media(max-width:1024px) {
+    .testimonials {
+        padding: 13.625rem 0rem 23.9375rem;
+
+        &__heading {
+            top: 0;
+            transform: translate(-50%,-50%);
+            max-width: calc(350px + (704 - 350) * ((100vw - 425px)/(768 - 425)));
+        }
+
+        &__slider {
+            max-width: calc(350px + (704 - 350) * ((100vw - 425px)/(768 - 425)));
+        }
+
+        &__text {
+            font-size: .875rem;
+            line-height: 1.625rem;
+        }
+    }
+}
+
+@media(max-width:426px) {
+    .testimonials {
+        padding: 11.25rem 0rem 24.625rem;
+        background-repeat: repeat-y;
+
+        &__heading {
+            top: -1.25rem;
+            transform: translate(-50%, 0);
+            max-width: 17.5rem;
+        }
+
+        &__slider {
+            max-width: 17.5rem;
+        }
+
+        &__text {
+            font-size: .875rem;
+            line-height: 1.625rem;
+            padding: 2.125rem 2.4375rem;
+        }
+    }
+}
