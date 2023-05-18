@@ -36,6 +36,10 @@
     &_yellow-brd {
         border: 2px solid $yellow;
         background-color: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
 
         &:hover {
             border: 2px solid #0A8817;
@@ -44,6 +48,16 @@
         &:active {
             color: $text-light;
             border: 2px solid #0A8817;
+        }
+
+        path {
+            transition: all 0.3s ease;
+        }
+
+        &:active {
+            path {
+                stroke: $text-light;
+            }
         }
     }
 

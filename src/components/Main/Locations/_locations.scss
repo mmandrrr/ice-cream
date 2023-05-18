@@ -1,0 +1,160 @@
+.locs {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.04em;
+    background-color: $green;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        position: relative;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateY(-95px);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+        max-width: 23rem;
+    }
+
+    &__title {
+        text-align: center;
+        display: inline;
+        padding: 0rem .625rem;
+        max-width: 4.6875rem;
+        border-radius: 6px;
+        background-color: $yellow;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        max-width: 17.625rem;
+
+        &_orange {
+            color: #D6936D;
+        }
+    }
+
+    &__divider {
+        width: 100%;
+        height: .125rem;
+        background-color: #E1E1E1;
+    }
+
+    &__schedule {
+        display: flex;
+        flex-direction: column;
+
+        &_grey {
+            color: #ABABAB;
+
+            &:first-child{
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 7.5rem;
+
+        button {
+            width: 12.25rem;
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .locs {
+        &__container {
+            padding-top: 17.75rem;
+        }
+
+        &__wrapper {
+            gap: 1rem;
+            width: 95%;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-18.75rem);
+        }
+
+		&__item {
+            padding: 2.5rem 1.6875rem;
+            max-width: 14rem;
+            font-size: 14px;
+            line-height: 1.625rem
+        }
+    
+        &__address {
+            max-width: 10.8125rem;
+        }
+
+        &__btns {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+@media(max-width:741px) {
+    .locs{
+        &__container {
+            padding-top: 55.25rem;
+        }
+    }
+}
+
+@media(max-width:489px) {
+    .locs {
+        &__container {
+            padding-top: 62.5rem;
+        }
+
+		&__wrapper {
+            flex-wrap: wrap;
+            transform: translate(-50%,-22.5rem);
+		}
+
+		&__item {
+            padding: 2.5rem 2rem;
+            max-width: 17.5rem;
+            font-size: .75rem;
+            line-height: 1.375rem;
+            gap: 1.5rem;
+        }
+
+        &__title {
+            line-height: 1rem;
+        }
+
+        &__address {
+            max-width: 13.25rem;
+        }
+
+        &__btns {
+            flex-wrap: wrap;
+
+            button {
+                height: 2.625rem;
+            }
+        }
+    }
+}

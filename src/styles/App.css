@@ -100,6 +100,16 @@ body {
 .btn_yellow-brd {
   border: 2px solid #F8D24E;
   background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .5rem;
 }
 
 .btn_yellow-brd:hover {
@@ -109,6 +119,15 @@ body {
 .btn_yellow-brd:active {
   color: #FCFCFC;
   border: 2px solid #0A8817;
+}
+
+.btn_yellow-brd path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn_yellow-brd:active path {
+  stroke: #FCFCFC;
 }
 
 .btn_no-brd {
@@ -1071,6 +1090,186 @@ body {
     font-size: .875rem;
     line-height: 1.625rem;
     padding: 2.125rem 2.4375rem;
+  }
+}
+
+.locs {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  background-color: #84A178;
+}
+
+.locs__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+
+.locs__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -webkit-transform: translateY(-95px);
+          transform: translateY(-95px);
+}
+
+.locs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  max-width: 23rem;
+}
+
+.locs__title {
+  text-align: center;
+  display: inline;
+  padding: 0rem .625rem;
+  max-width: 4.6875rem;
+  border-radius: 6px;
+  background-color: #F8D24E;
+}
+
+.locs__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+  max-width: 17.625rem;
+}
+
+.locs__address_orange {
+  color: #D6936D;
+}
+
+.locs__divider {
+  width: 100%;
+  height: .125rem;
+  background-color: #E1E1E1;
+}
+
+.locs__schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.locs__schedule_grey {
+  color: #ABABAB;
+}
+
+.locs__schedule_grey:first-child {
+  margin-bottom: .5rem;
+}
+
+.locs__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 7.5rem;
+}
+
+.locs__btns button {
+  width: 12.25rem;
+}
+
+@media (max-width: 1024px) {
+  .locs__container {
+    padding-top: 17.75rem;
+  }
+  .locs__wrapper {
+    gap: 1rem;
+    width: 95%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -18.75rem);
+            transform: translate(-50%, -18.75rem);
+  }
+  .locs__item {
+    padding: 2.5rem 1.6875rem;
+    max-width: 14rem;
+    font-size: 14px;
+    line-height: 1.625rem;
+  }
+  .locs__address {
+    max-width: 10.8125rem;
+  }
+  .locs__btns {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 741px) {
+  .locs__container {
+    padding-top: 55.25rem;
+  }
+}
+
+@media (max-width: 489px) {
+  .locs__container {
+    padding-top: 62.5rem;
+  }
+  .locs__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transform: translate(-50%, -22.5rem);
+            transform: translate(-50%, -22.5rem);
+  }
+  .locs__item {
+    padding: 2.5rem 2rem;
+    max-width: 17.5rem;
+    font-size: .75rem;
+    line-height: 1.375rem;
+    gap: 1.5rem;
+  }
+  .locs__title {
+    line-height: 1rem;
+  }
+  .locs__address {
+    max-width: 13.25rem;
+  }
+  .locs__btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .locs__btns button {
+    height: 2.625rem;
   }
 }
 /*# sourceMappingURL=App.css.map */
