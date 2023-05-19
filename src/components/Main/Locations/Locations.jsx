@@ -1,19 +1,19 @@
+import { useState } from 'react';
+
 import Button from '../../ServiceElements/Button';
 import LocationItem from './LocationItem/LocationItem';
 import LocationModal from '../../ModalWindows/LocationModal/LocationModal';
-import { useState } from 'react';
+
+import { openModal } from '../../../services/openModal';
+import { closeModal } from '../../../services/closeModal';
+import FranchiseModal from '../../ModalWindows/FranchiseModal/FranchiseModal';
+
+
 
 const Locations = () => {
 
-    const [modal, setModal] = useState('modal__wrapper');
-
-    const openModal = () => {
-        setModal('modal__wrapper open');
-    }
-
-    const closeModal = () => {
-        setModal('modal__wrapper');
-    }
+    const [modalLocs, setModalLocs] = useState('modal__wrapper');
+    const [modalFrnch, setModalFrnch] = useState('modal__wrapper');
 
     return(
         <section className="locs">
@@ -28,19 +28,24 @@ const Locations = () => {
                         text='Our Locations'
                         className='btn_yellow-bg'
                         img={true}
-                        openModal={openModal}
+                        openModal={() => openModal(setModalLocs,'modal__wrapper open-locs')}
                     />
                     <Button 
                         text='Franchise'
                         className='btn_yellow-brd'
                         img={true}
+                        openModal={() => openModal(setModalFrnch,'modal__wrapper open-frnch')}
                     />
                 </div>
             </div>
             <LocationModal 
-                modal={modal}
-                closeModal={closeModal}
+                modal={modalLocs}
+                closeModal={(e) => closeModal(e,setModalLocs,'modal__wrapper','modal__wrapper','close-btn')}
             />
+            <FranchiseModal
+                modal={modalFrnch}
+                closeModal={(e) => closeModal(e,setModalFrnch,'modal__wrapper','modal__wrapper','close-btn')}
+             />
         </section>
     )
 }

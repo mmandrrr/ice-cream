@@ -64,6 +64,10 @@ body {
   overflow-x: hidden;
 }
 
+body.disable-scroll {
+  overflow-y: hidden;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1443,6 +1447,51 @@ body {
 
 .locs-modal {
   padding: 2rem 3.75rem;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .locs-modal h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .locs-modal iframe {
+    max-width: 14.0625rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .locs-modal {
+    padding: 1.75rem;
+  }
+}
+
+.modal__wrapper.open-locs {
+  display: block;
+}
+
+.modal__wrapper.open-frnch {
+  display: block;
+}
+
+.frnch-modal {
+  padding: 2rem 3.75rem;
+}
+
+.frnch-modal h2 {
+  text-align: center;
+  max-width: 20.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.frnch-modal p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-bottom: 2rem;
+}
+
+.frnch__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1453,14 +1502,76 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
 }
 
-.locs-modal h2 {
-  font-family: "Seymour One", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.frnch__form input {
+  width: 23rem;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: .625rem;
+  padding: .6875rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.frnch__form textarea {
+  resize: none;
+  width: 23rem;
+  max-height: 5.25rem;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: .625rem;
+  padding: .6875rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.frnch__form button {
+  max-width: 7.5625rem;
+}
+
+@media (max-width: 1129px) {
+  .frnch-modal {
+    padding: 1rem 1.875rem;
+  }
+  .frnch-modal p {
+    font-size: .75rem;
+    line-height: 1.125rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .frnch-modal {
+    padding: 25px 1.875rem;
+  }
+  .frnch-modal h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.0;
+    margin-bottom: 1.25rem;
+  }
+  .frnch-modal p {
+    max-width: 13.875rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.0;
+  }
+  .frnch-modal .close-btn {
+    -webkit-transform: translate(0.625rem, -0.9375rem);
+            transform: translate(0.625rem, -0.9375rem);
+  }
+  .frnch__form input {
+    max-width: 14rem;
+    padding: .5rem .75rem;
+    max-height: 2rem;
+    margin-bottom: .75rem;
+  }
+  .frnch__form textarea {
+    max-width: 14rem;
+    padding: .5rem .75rem;
+    margin-bottom: 1.5rem;
+    max-height: 4rem;
+  }
 }
 
 .modal__wrapper {
@@ -1485,16 +1596,44 @@ body {
   background-color: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: .625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal a {
   text-decoration: none;
 }
 
+.modal__title {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .close-btn {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .close-btn span {
@@ -1513,25 +1652,5 @@ body {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-top: -0.125rem;
-}
-
-.modal__wrapper.open {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .locs-modal h2 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .locs-modal iframe {
-    max-width: 14.0625rem;
-  }
-}
-
-@media (max-width: 426px) {
-  .locs-modal {
-    padding: 1.75rem;
-  }
 }
 /*# sourceMappingURL=App.css.map */

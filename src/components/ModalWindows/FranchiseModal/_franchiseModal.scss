@@ -1,0 +1,108 @@
+.modal__wrapper.open-frnch {
+    display: block;
+}
+
+.frnch-modal {
+    padding: 2rem 3.75rem;
+
+    h2 {
+        text-align: center;
+        max-width: 20.125rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.375rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.frnch {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+
+        input {
+            width: 23rem;
+            background: rgba(248, 210, 78, 0.1);
+            border: 1px solid #84A178;
+            border-radius: .625rem;
+            padding: .6875rem 1rem;
+            margin-bottom: 1rem;
+        }
+
+        textarea {
+            resize: none;
+            width: 23rem;
+            max-height: 5.25rem;
+            background: rgba(248, 210, 78, 0.1);
+            border: 1px solid #84A178;
+            border-radius: .625rem;
+            padding: .6875rem 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        button {
+            max-width: 7.5625rem;
+        }
+    }
+}
+
+@media(max-width:1129px) {
+    .frnch-modal {
+        padding: 1rem 1.875rem;
+
+        p {
+            font-size: .75rem;
+            line-height: 1.125rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media(max-width:450px) {
+    .frnch-modal {
+        padding: 25px 1.875rem;
+    
+        h2 {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.0;
+            margin-bottom: 1.25rem;
+        }
+
+        p {
+            max-width: 13.875rem;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.0;
+        }
+
+        .close-btn {
+            transform: translate(.625rem,-0.9375rem);
+        }
+    }
+
+    .frnch {
+        &__form {
+
+            input {
+                max-width: 14rem;
+                padding: .5rem .75rem;
+                max-height: 2rem;
+                margin-bottom: .75rem;
+            }
+
+            textarea {
+                max-width: 14rem;
+                padding: .5rem .75rem;
+                margin-bottom: 1.5rem;
+                max-height: 4rem;
+            }
+        }
+    }
+}

@@ -15,6 +15,10 @@ body, a, button {
 
 body {
     overflow-x: hidden;
+
+    &.disable-scroll {
+        overflow-y: hidden;
+    }
 }
 
 * {
