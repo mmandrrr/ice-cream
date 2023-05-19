@@ -1,7 +1,20 @@
 import Button from '../../ServiceElements/Button';
 import LocationItem from './LocationItem/LocationItem';
+import LocationModal from '../../ModalWindows/LocationModal/LocationModal';
+import { useState } from 'react';
 
 const Locations = () => {
+
+    const [modal, setModal] = useState('modal__wrapper');
+
+    const openModal = () => {
+        setModal('modal__wrapper open');
+    }
+
+    const closeModal = () => {
+        setModal('modal__wrapper');
+    }
+
     return(
         <section className="locs">
             <div className="locs__container container">
@@ -15,6 +28,7 @@ const Locations = () => {
                         text='Our Locations'
                         className='btn_yellow-bg'
                         img={true}
+                        openModal={openModal}
                     />
                     <Button 
                         text='Franchise'
@@ -23,6 +37,10 @@ const Locations = () => {
                     />
                 </div>
             </div>
+            <LocationModal 
+                modal={modal}
+                closeModal={closeModal}
+            />
         </section>
     )
 }

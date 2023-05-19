@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 
 import './styles/App.css';
 import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   )

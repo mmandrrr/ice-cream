@@ -5,6 +5,7 @@
 @import './style-services/variables';
 @import './style-services/text-style';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap');
+@import './scrollbar';
 
 body, a, button {
     cursor: url(../assets/cursor/Cursor.svg), auto;
@@ -23,3 +24,5 @@ body {
 @import '../components/ServiceElements/serviceElem';
 @import '../components/Header/header';
 @import '../components/Main/main';
+@import '../components/Footer/footer';
+@import '../components/ModalWindows/modalWindows';

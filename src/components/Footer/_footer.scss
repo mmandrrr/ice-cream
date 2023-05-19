@@ -1,0 +1,140 @@
+.footer {
+    background-color: $green;
+    color: $text-light;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.375rem;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.3125rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        max-width: 31.5rem;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-weight: 700;
+            font-size: 3.625rem;
+            line-height: 4.4375rem;
+            letter-spacing: 0.06em;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    &__links {  
+        align-self: end;
+        display: flex;
+        gap: 1.875rem;
+
+        circle {
+            transition: all 0.3s ease;
+        }
+
+        svg {
+            &:hover {
+                circle {
+                    fill: $text-light;
+                }
+            }
+        }
+    }
+
+    &__phone {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.875rem;
+        color: $text-dark;
+
+        span {
+            color: $text-light;
+        }
+    }
+
+    &__divider {
+        display: block;
+        width: 100%;
+        height: .125rem;
+        background-color: #E1E1E1;
+        margin-bottom: .75rem;
+    }
+
+    &__rights {
+        font-weight: 700;
+        font-size: .75rem;
+        line-height: 1.375rem;
+        letter-spacing: 0.02em;
+        color: #7A7A7A;
+        text-align: center;
+        margin-bottom: .6875rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .footer {
+
+		&__content {
+            margin-bottom: 2rem;
+		}
+
+		&__title {
+            max-width: 22rem;
+            font-size: 1.625rem;
+            line-height: 2rem;
+
+            span {
+                font-size: 3rem;
+                line-height: 3.6875rem;
+            }
+		}
+
+		&__phone {
+            font-size: .875rem;
+            line-height: 1.625rem;
+		}
+    }
+}
+
+@media(max-width:500px) {
+    .footer {
+
+		&__content {
+            display: block;
+		}
+
+		&__title {
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            margin-bottom: 2.625rem;
+            max-width: 14.8125rem;
+
+            span {
+                font-size: 2.125rem;
+                line-height: 2.5625rem;
+                letter-spacing: 0.04em;
+            }
+		}
+
+		&__phone {
+            align-self: end;
+            font-size: .75rem;
+            line-height: 1.375rem;
+		}
+    }
+}
