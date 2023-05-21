@@ -16,7 +16,7 @@ const Locations = () => {
     const [modalFrnch, setModalFrnch] = useState('modal__wrapper');
 
     return(
-        <section className="locs">
+        <section id='locs' className="locs">
             <div className="locs__container container">
                 <div className="locs__wrapper">
                     <LocationItem />

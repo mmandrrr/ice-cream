@@ -17,10 +17,10 @@ const MobileMenu = ({changeClassName}) => {
             </div>
             <nav className="mobile__menu">
                 <ul className="mobile__list">
-                    <li className="mobile__item"><a href="#" className="mobile__link">Home</a></li>
-                    <li className="mobile__item"><a href="#" className="mobile__link">How it`s made?</a></li>
-                    <li className="mobile__item"><a href="#" className="mobile__link">Our products</a></li>
-                    <li className="mobile__item"><a href="#" className="mobile__link">Contact</a></li>
+                    <li className="mobile__item"><a href="#heading" className="mobile__link">Home</a></li>
+                    <li className="mobile__item"><a href="#made" className="mobile__link">How it`s made?</a></li>
+                    <li className="mobile__item"><a href="#products" className="mobile__link">Our products</a></li>
+                    <li className="mobile__item"><a href="#locs" className="mobile__link">Contact</a></li>
                 </ul>
                 <Button 
                     text='Buy now'

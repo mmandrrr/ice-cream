@@ -24,10 +24,10 @@ const Header = () => {
                 </a>
                 <nav className="header__menu">
                     <ul className="header__menu-list">
-                        <li className="header__menu-item"><a href="#" className="header__menu-link">Home</a></li>
-                        <li className="header__menu-item"><a href="#" className="header__menu-link">How it’s made?</a></li>
-                        <li className="header__menu-item"><a href="#" className="header__menu-link">Our products</a></li>
-                        <li className="header__menu-item"><a href="#" className="header__menu-link">Contact</a></li>
+                        <li className="header__menu-item"><a href="#heading" className="header__menu-link">Home</a></li>
+                        <li className="header__menu-item"><a href="#made" className="header__menu-link">How it’s made?</a></li>
+                        <li className="header__menu-item"><a href="#products" className="header__menu-link">Our products</a></li>
+                        <li className="header__menu-item"><a href="#locs" className="header__menu-link">Contact</a></li>
                     </ul>
                 </nav>
                 <Burger 

@@ -1,13 +1,22 @@
 import Button from '../../ServiceElements/Button';
+import HowMadeModal from '../../ModalWindows/HowMadeModal/HowMadeModal';
 
 import cow from '../../../assets/how-its-made/cow-min.png';
-import cowIcon from '../../../assets/how-its-made/cow-icon.svg'
-import iceIcon from '../../../assets/how-its-made/ice-cream-icon.svg'
-import weightIcon from '../../../assets/how-its-made/weight-icon.svg'
+import cowIcon from '../../../assets/how-its-made/cow-icon.svg';
+import iceIcon from '../../../assets/how-its-made/ice-cream-icon.svg';
+import weightIcon from '../../../assets/how-its-made/weight-icon.svg';
+
+import { useState } from 'react';
+
+import { openModal } from '../../../services/openModal';
+import { closeModal } from '../../../services/closeModal';
 
 const HowMade = () => {
+
+    const [modalMade, setModalMade] = useState('modal__wrapper');
+
     return(
-        <section className="made">
+        <section id='made' className="made">
             <div className="made__container container">
                 <h3 className="made__subtitle subtitle">tradition and love</h3>
                 <h2 className="made__title title">how it’s made?</h2>
@@ -23,6 +32,7 @@ const HowMade = () => {
                             text='Read more'
                             className='btn_yellow-bg'
                             img={true}
+                            openModal={() => openModal(setModalMade,'modal__wrapper open-made')}
                         />
                     </div>
                 </div>
@@ -44,6 +54,10 @@ const HowMade = () => {
                     </div>
                 </div>
             </div>
+            <HowMadeModal 
+                modal={modalMade}
+                closeModal={(e) => closeModal(e,setModalMade,'modal__wrapper','modal__wrapper','close-btn')}
+            />
         </section>
     )
 }

@@ -5,7 +5,7 @@ import arrow from '../../../assets/utility/arrow-with-bar-white.svg';
 
 const Heading = () => {
     return(
-        <section className="heading">
+        <section id='heading' className="heading">
             <div className="container heading__container">
                 <h1 className="heading__title">
                     ice cream made with <span>passion</span>

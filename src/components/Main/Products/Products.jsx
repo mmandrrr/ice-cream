@@ -17,7 +17,7 @@ const Products = () => {
     })
 
     return(
-        <section className="products">
+        <section id='products' className="products">
             <div className="products__container container">
                 <h3 className="products__subtitle subtitle">100% natural</h3>
                 <h2 className="products__title title">Products</h2>
