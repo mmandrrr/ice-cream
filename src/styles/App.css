@@ -1624,6 +1624,10 @@ body.disable-scroll {
   }
 }
 
+.modal__wrapper.open-buy {
+  display: block;
+}
+
 .modal__wrapper {
   display: none;
   top: 0;

@@ -3,10 +3,15 @@ import {useState} from 'react';
 import Burger from '../MobileMenu/Burger'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import Button from '../ServiceElements/Button'
+import BuyModal from '../ModalWindows/BuyModal/BuyModal';
+
+import {closeModal} from '../../services/closeModal';
+import {openModal} from '../../services/openModal';
 
 const Header = () => {
 
-    const [className, setClassName] = useState('header');
+    const [className, setClassName] = useState('header'),
+          [buyModal, setBuyModal] = useState('modal__wrapper');
 
     const changeClassName = (className) => {
         setClassName(className);
@@ -37,10 +42,15 @@ const Header = () => {
                     text='Buy now'
                     className='btn_yellow-bg'
                     img={true}
+                    openModal={() => openModal(setBuyModal,'modal__wrapper open-buy')}
                 />
             </div>
             <MobileMenu 
                 changeClassName={changeClassName}
+            />
+            <BuyModal 
+                modal={buyModal}
+                closeModal={(e) => closeModal(e,setBuyModal,'modal__wrapper','modal__wrapper','close-btn')}
             />
         </header>
     )
