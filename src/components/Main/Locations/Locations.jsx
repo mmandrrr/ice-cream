@@ -40,11 +40,11 @@ const Locations = () => {
             </div>
             <LocationModal 
                 modal={modalLocs}
-                closeModal={(e) => closeModal(e,setModalLocs,'modal__wrapper','modal__wrapper','close-btn')}
+                closeModal={(e) => closeModal(e,setModalLocs,'modal__wrapper','modal__wrapper','close-btn','close')}
             />
             <FranchiseModal
                 modal={modalFrnch}
-                closeModal={(e) => closeModal(e,setModalFrnch,'modal__wrapper','modal__wrapper','close-btn')}
+                closeModal={(e) => closeModal(e,setModalFrnch,'modal__wrapper','modal__wrapper','close-btn','close')}
              />
         </section>
     )

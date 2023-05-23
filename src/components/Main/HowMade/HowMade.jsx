@@ -56,7 +56,7 @@ const HowMade = () => {
             </div>
             <HowMadeModal 
                 modal={modalMade}
-                closeModal={(e) => closeModal(e,setModalMade,'modal__wrapper','modal__wrapper','close-btn')}
+                closeModal={(e) => closeModal(e,setModalMade,'modal__wrapper','modal__wrapper','close-btn','close')}
             />
         </section>
     )

@@ -50,7 +50,7 @@ const Header = () => {
             />
             <BuyModal 
                 modal={buyModal}
-                closeModal={(e) => closeModal(e,setBuyModal,'modal__wrapper','modal__wrapper','close-btn')}
+                closeModal={(e) => closeModal(e,setBuyModal,'modal__wrapper','modal__wrapper','close-btn','close')}
             />
         </header>
     )

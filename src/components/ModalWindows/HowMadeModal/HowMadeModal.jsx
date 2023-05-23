@@ -4,8 +4,8 @@ const HowMadeModal = ({modal,closeModal}) => {
         <div onClick={closeModal} className={modal}>
             <div className="made-modal modal">
                 <div onClick={closeModal} className="close-btn">
-                    <span></span>
-                    <span></span>
+                    <span className="close"></span>
+                    <span className="close"></span>
                 </div>
                 <h2 className='modal__title'>How it’s made?</h2>
                 <div className="made__video"></div>

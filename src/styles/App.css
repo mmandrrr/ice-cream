@@ -1628,6 +1628,100 @@ body.disable-scroll {
   display: block;
 }
 
+.buy-modal {
+  padding: 2rem 3.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.buy-modal__products {
+  padding-top: 4.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.buy-modal__item {
+  width: 8.1875rem;
+  border: 2px solid #96AF8C;
+  -webkit-filter: drop-shadow(0px 5.2608px 19.7264px rgba(212, 20, 67, 0.1));
+          filter: drop-shadow(0px 5.2608px 19.7264px rgba(212, 20, 67, 0.1));
+  border-radius: .9863rem;
+  padding: 5.9375rem .625rem 1.25rem;
+  position: relative;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.buy-modal__item:nth-child(2) {
+  border-color: #EFD478;
+}
+
+.buy-modal__item:nth-child(3) {
+  border-color: #D6936D;
+}
+
+.buy-modal__item.active {
+  background-color: #96AF8C;
+}
+
+.buy-modal__item.active:nth-child(2) {
+  background-color: #EFD478;
+}
+
+.buy-modal__item.active:nth-child(3) {
+  background-color: #D6936D;
+}
+
+.buy-modal__item img {
+  max-width: 120%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.buy-modal form input:nth-child(3) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .modal__wrapper.buy {
+    overflow-y: scroll;
+  }
+  .buy-modal.modal {
+    padding: 1.75rem;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .buy-modal__products {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 5.625rem;
+  }
+  .buy-modal form .btn_yellow-bg {
+    display: block;
+  }
+}
+
 .modal__wrapper {
   display: none;
   top: 0;
@@ -1677,7 +1771,7 @@ body.disable-scroll {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  height: 20px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1685,9 +1779,6 @@ body.disable-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .close-btn span {
